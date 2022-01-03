@@ -1,88 +1,76 @@
 <template>
-  <v-app>
-    <v-footer white padless>
-      <v-card class="flex" flat tile>
-        <v-row class="text-center">
-          <v-col lg="12">
-            <v-img
-              :src="require('../assets/l1.png')"
-              class="my-3 white"
-              contain
-              height="100"
-            />
+  <v-footer dark padless>
+    <v-card flat tile class="indigo darken-4 white--text text-center flex">
+      <v-row class="text-center">
+        <v-col lg="12">
 
-            <v-container class="white lighten-5">
-              <v-row no-gutters>
-                <v-col cols="12" sm="6" md="6">
-                  <v-list-item>
-                    <v-list-item-content>
-                      <v-list-item-title class="pink--text font-weight-black"
-                        >I am new here<v-chip class="ma-2" color="red" text-color="white">
-                          You are here
-                        </v-chip></v-list-item-title
-                      >
-                    </v-list-item-content>
-                  </v-list-item>
-                  <v-list-item>
-                    <v-list-item-content>
-                      <v-list-item-title class="black--text font-weight-black"
-                        >I want to change the world</v-list-item-title
-                      >
-                      <v-list>I want to make a plan</v-list>
-                      <v-list>I want to make a plan</v-list>
-                      <v-list>I want to make a plan</v-list>
-                    </v-list-item-content>
-                  </v-list-item>
-                  <v-list-item>
-                    <v-list-item-content>
-                      <a href="#"
-                        ><v-list-item-title class="black--text font-weight-black"
-                          >I want to found their ideas</v-list-item-title
-                        ></a
-                      >
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-col>
-                <v-col cols="6" md="6">
-                  <v-list-item>
-                    <v-list-item-content>
-                      <a href="#"
-                        ><v-list-item-title class="black--text font-weight-black"
-                          >Want to talk?</v-list-item-title
-                        ></a
-                      >
-                    </v-list-item-content>
-                  </v-list-item>
-                  <v-list-item>
-                    <v-list-item-content>
-                      <a href="#"
-                        ><v-list-item-title class="black--text font-weight-black"
-                          >My plan</v-list-item-title
-                        ></a
-                      >
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-col>
-              </v-row>
-            </v-container>
-            <v-card-text>
-              <v-btn v-for="icon in icons" :key="icon" class="mx-4 dark--text" icon>
-                <v-icon size="24px">
-                  {{ icon }}
-                </v-icon>
-              </v-btn>
-            </v-card-text>
+          <v-container class="indigo darken-4">
+            <v-row no-gutters>
+              <v-col cols="12" sm="6" md="6">
+                <v-list-item>
+                  <v-list-item-content>
+                    <v-list-item-title class="pink--text font-weight-black"
+                      >I am new here<v-chip class="ma-2 font-weight-light" color="pink lighten-1" text-color="white">
+                        You are here
+                      </v-chip></v-list-item-title
+                    >
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-content>
+                    <v-list-item-title class="white--text font-weight-black"
+                      >I want to change the world</v-list-item-title
+                    >
+                    
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-content>
+                    <a href="#"
+                      ><v-list-item-title class="white--text"
+                        >I want to found their ideas</v-list-item-title
+                      ></a
+                    >
+                  </v-list-item-content>
+                </v-list-item>
+              </v-col>
 
-            <!-- <v-divider></v-divider> -->
+              <v-col cols="6" md="6">
+                <v-list-item>
+                  <v-list-item-content>
+                    <a href="#"
+                      ><v-list-item-title class="white--text"
+                        >Want to talk?</v-list-item-title
+                      ></a
+                    >
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-content>
+                    <a href="#"
+                      ><v-list-item-title class="white--text"
+                        >My plan</v-list-item-title
+                      ></a
+                    >
+                  </v-list-item-content>
+                </v-list-item>
+              </v-col>
+            </v-row>
+          </v-container>
+          <v-card-text>
+            <v-btn v-for="icon in icons" :key="icon" class="mx-4 dark--text" icon>
+              <v-icon size="24px">
+                {{ icon }}
+              </v-icon>
+            </v-btn>
+          </v-card-text>
 
-            <v-card-text class="dark--text">
-              {{ new Date().getFullYear() }} — <strong>SHIFT-UX</strong>
-            </v-card-text>
-          </v-col>
-        </v-row>
-      </v-card>
-    </v-footer>
-  </v-app>
+
+        
+        </v-col>
+      </v-row>
+    </v-card>
+  </v-footer>
 </template>
 
 <script>

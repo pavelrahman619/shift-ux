@@ -31,6 +31,7 @@
 
     <v-main>
       <!-- <HelloWorld /> -->
+      <Menu />
      <Footer />
     </v-main>
   </v-app>
@@ -39,12 +40,14 @@
 <script>
 // import HelloWorld from "./components/HelloWorld";
 import Footer from "./components/Footer";
+import Menu from "./components/Menu";
 
 export default {
   name: "App",
 
   components: {
     // HelloWorld,
+    Menu,
     Footer,
   },
 
