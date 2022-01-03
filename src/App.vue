@@ -1,56 +1,49 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
+    <v-card class="overflow-hidden">
+      <v-app-bar
+        absolute
+        color="white"
+        elevate-on-scroll
+        elevation="4"
+        
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
+        <v-toolbar-side-icon>
+          <v-img class="mr-3" src="@/assets/l1.png" height="50px" width="150px"> </v-img>
+        </v-toolbar-side-icon>
+
+        <v-spacer></v-spacer>
+        <v-app-bar-nav-icon>
+         
+        </v-app-bar-nav-icon>
+
+       
+      </v-app-bar>
+      <v-sheet id="scrolling-techniques-7"  max-height="80">
+        <v-container style="height: 150px"> </v-container>
+      </v-sheet>
+    </v-card>
+
+
+
 
     <v-main>
-      <HelloWorld/>
+      <!-- <HelloWorld /> -->
+     <Footer />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+// import HelloWorld from "./components/HelloWorld";
+import Footer from "./components/Footer";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    // HelloWorld,
+    Footer,
   },
 
   data: () => ({
