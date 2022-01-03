@@ -1,5 +1,4 @@
 <template>
-
   <div id="app">
     <span class="bg"></span>
     <v-app>
@@ -11,7 +10,7 @@
         <a href="#">
           <img
             class="mr-3"
-            :src="require('../public/images/shift-logo.png')"
+            :src="require('./assets/images/shift-logo.png')"
             height="40"
         /></a>
 
@@ -21,45 +20,14 @@
 
       <v-main>
         <!--  -->
-        <div class="container">
-          <div>
-            <h1><b>Let's change the world one campaign at a time</b></h1>
-          </div>
+        <div>
+          <Main></Main>
+        </div>
+        
 
-          <div class="main-list">
-            <v-list-item>
-              <v-list-item-content>
-                <a href="#"
-                  ><v-list-item-title class="pink--text"
-                    >I am new here</v-list-item-title
-                  ></a
-                >
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-content>
-                <a href="#"
-                  ><v-list-item-title class="pink--text"
-                    >I want to change the world</v-list-item-title
-                  ></a
-                >
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-content>
-                <a href="#"
-                  ><v-list-item-title class="pink--text"
-                    >I want to know how to help</v-list-item-title
-                  ></a
-                >
-              </v-list-item-content>
-            </v-list-item>
-          </div>
-
-          <div class="buttons">
-            <img :src="require('../public/images/button1.png')" />
-            <img :src="require('../public/images/button2.png')" />
-          </div>
+        <div>
+          <!-- <Menu /> -->
+          <Footer /> 
         </div>
       </v-main>
     </v-app>
@@ -68,11 +36,17 @@
 
 
 <script>
+import Main from "./components/Main";
+// import Menu from "./components/Menu";
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
 
   components: {
+    Main,
+    // Menu,
+    Footer,
   },
 
   data: () => ({ drawer: false }),
@@ -81,6 +55,5 @@ export default {
 
 
 <style lang="scss">
-@import './assets/css/style.scss';
-
+@import "./assets/css/style.scss";
 </style>

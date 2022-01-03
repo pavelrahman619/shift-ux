@@ -3,7 +3,8 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../public/images/home-image.jpg"); */
+    background-image: url("../assets/images/home-image.jpg"); */
+
     background-color: yellow;
   }
   
@@ -30,7 +31,7 @@
   /* mobile */
   @media (max-width: 480px) {
     #app {
-      background-image: url("../public/images/home-image-mobile.jpeg");
+      background-image: url("assets/images/home-image-mobile.jpeg");
     }
   
   .main-list {
@@ -44,13 +45,13 @@
   /* tablet */
   @media (min-width: 481px) and (max-width: 1024px) {
     body {
-      background-image: url("../public/images/home-image.jpg");
+      background-image: url("assets/images/home-image.jpg");
     }
   }
   
   /* desktop */
   @media (min-width: 1025px) {
     body {
-      background-image: url("../public/images/home-image.jpg");
+      background-image: url("assets/images/home-image.jpg");
     }
   }
