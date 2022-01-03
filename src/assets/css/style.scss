@@ -1,0 +1,56 @@
+#app {
+    /* background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../public/images/home-image.jpg"); */
+    background-color: yellow;
+  }
+  
+  .container {
+    position: relative;
+    text-align: center;
+    top: 50%;
+  }
+  
+  .main-list {
+    .v-list-item {
+      left: 17%;
+    }
+  }
+  
+  .buttons {
+      position: absolute;
+      left: 70%;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  /* mobile */
+  @media (max-width: 480px) {
+    #app {
+      background-image: url("../public/images/home-image-mobile.jpeg");
+    }
+  
+  .main-list {
+    .v-list-item {
+      left: 0%;
+    }
+  }
+  
+  }
+  
+  /* tablet */
+  @media (min-width: 481px) and (max-width: 1024px) {
+    body {
+      background-image: url("../public/images/home-image.jpg");
+    }
+  }
+  
+  /* desktop */
+  @media (min-width: 1025px) {
+    body {
+      background-image: url("../public/images/home-image.jpg");
+    }
+  }

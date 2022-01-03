@@ -99,12 +99,8 @@
           </div>
 
           <div class="buttons">
-            <img
-              :src="require('../public/images/button1.png')"
-            />
-            <img
-              :src="require('../public/images/button2.png')"
-            />
+            <img :src="require('../public/images/button1.png')" />
+            <img :src="require('../public/images/button2.png')" />
           </div>
         </div>
       </v-main>
@@ -128,47 +124,7 @@ export default {
 </script>
 
 
-<style>
-#app {
-  /* background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../public/images/home-image.jpg"); */
-  background-color: yellow;
-}
+<style lang="scss">
+@import './assets/css/style.scss';
 
-.container {
-  position: relative;
-  text-align: center;
-  top: 50%;
-}
-
-.main-list > v-list-item-title {
-  color: white;
-}
-
-a {
-  text-decoration: none;
-}
-/* mobile */
-@media (max-width: 480px) {
-  #app {
-    background-image: url("../public/images/home-image-mobile.jpeg");
-  }
-}
-
-/* tablet */
-@media (min-width: 481px) and (max-width: 1024px) {
-  body {
-    background-image: url("../public/images/home-image.jpg");
-  }
-}
-
-/* desktop */
-@media (min-width: 1025px) {
-  body {
-    background-image: url("../public/images/home-image.jpg");
-  }
-}
 </style>
