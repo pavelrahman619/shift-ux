@@ -14,9 +14,11 @@
 
         <v-spacer></v-spacer>
         <v-app-bar-nav-icon>
-         
+       
         </v-app-bar-nav-icon>
-
+<!-- <v-navigation-drawer right hide-overlay="true" v-model="drawer" app>
+      
+      </v-navigation-drawer> -->
        
       </v-app-bar>
       <v-sheet id="scrolling-techniques-7"  max-height="80">
@@ -46,8 +48,10 @@ export default {
     Footer,
   },
 
-  data: () => ({
-    //
-  }),
+ 
+     data: () => ({ 
+       
+      }),
+ 
 };
 </script>

@@ -1,66 +1,96 @@
 <template>
-<v-app>
- 
+  <v-app>
+    <v-footer white padless>
+      <v-card class="flex" flat tile>
+        <v-row class="text-center">
+          <v-col lg="12">
+            <v-img
+              :src="require('../assets/l1.png')"
+              class="my-3 white"
+              contain
+              height="100"
+            />
 
- <v-footer
-    white
-    padless
-  >
-  <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
-          :src="require('../assets/l1.png')"
-          class="my-3"
-          contain
-          height="150"
-        />
-      </v-col>
-    <v-card
-      flat
-      tile
-      class="indigo grey lighten-5 red--text text-center"
-    >
+            <v-container class="white lighten-5">
+              <v-row no-gutters>
+                <v-col cols="12" sm="6" md="6">
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title class="pink--text font-weight-black"
+                        >I am new here<v-chip class="ma-2" color="red" text-color="white">
+                          You are here
+                        </v-chip></v-list-item-title
+                      >
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title class="black--text font-weight-black"
+                        >I want to change the world</v-list-item-title
+                      >
+                      <v-list>I want to make a plan</v-list>
+                      <v-list>I want to make a plan</v-list>
+                      <v-list>I want to make a plan</v-list>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <a href="#"
+                        ><v-list-item-title class="black--text font-weight-black"
+                          >I want to found their ideas</v-list-item-title
+                        ></a
+                      >
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+                <v-col cols="6" md="6">
+                  <v-list-item>
+                    <v-list-item-content>
+                      <a href="#"
+                        ><v-list-item-title class="black--text font-weight-black"
+                          >Want to talk?</v-list-item-title
+                        ></a
+                      >
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <a href="#"
+                        ><v-list-item-title class="black--text font-weight-black"
+                          >My plan</v-list-item-title
+                        ></a
+                      >
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-col>
+              </v-row>
+            </v-container>
+            <v-card-text>
+              <v-btn v-for="icon in icons" :key="icon" class="mx-4 dark--text" icon>
+                <v-icon size="24px">
+                  {{ icon }}
+                </v-icon>
+              </v-btn>
+            </v-card-text>
 
-      <v-card-text>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4 derk--text"
-          icon
-        >
-          <v-icon size="24px">
-            {{ icon }}
-          </v-icon>
-        </v-btn>
-      </v-card-text>
+            <!-- <v-divider></v-divider> -->
 
-       <v-card-text class="black--text pt-0">
-        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      </v-card-text>
-      <v-divider></v-divider>
-
-      <v-card-text class="derk--text">
-        {{ new Date().getFullYear() }} — <strong>SHIFT-UX</strong>
-      </v-card-text>
-    </v-card>
-     </v-row>
-  </v-footer>
-   
-
+            <v-card-text class="dark--text">
+              {{ new Date().getFullYear() }} — <strong>SHIFT-UX</strong>
+            </v-card-text>
+          </v-col>
+        </v-row>
+      </v-card>
+    </v-footer>
   </v-app>
 </template>
 
 <script>
-  export default {
-    name: 'Footer',
+export default {
+  name: "Footer",
 
-    data: () => ({
-      icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
-    }),
-  }
+  data: () => ({
+    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
+  }),
+};
 </script>
