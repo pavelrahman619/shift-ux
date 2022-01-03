@@ -36,8 +36,8 @@
       </div>
 
       <div class="buttons">
-        <img :src="require('../assets/images/button1.png')" />
-        <img :src="require('../assets/images/button2.png')" />
+        <a href=""><img :src="require('../assets/images/button1.png')" /></a> 
+        <a href=""><img :src="require('../assets/images/button2.png')" /></a> 
       </div>
     </div>
   </v-container>

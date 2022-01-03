@@ -2,7 +2,7 @@
   <v-footer dark padless>
     <v-card flat tile class="indigo darken-4 white--text text-center flex">
       <v-row class="text-center">
-        <v-col lg="12">
+        <v-col  lg="12">
 
           <v-container fluid class="indigo darken-4">
             <v-row no-gutters>

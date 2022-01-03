@@ -2,8 +2,10 @@
   <div id="app">
     <span class="bg"></span>
     <v-app>
-      <v-navigation-drawer right hide-overlay="true" v-model="drawer" app>
+      <v-navigation-drawer app right hide-overlay="true" v-model="drawer" width="100%">
         <!--  -->
+        <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+        <Menu></Menu>
       </v-navigation-drawer>
 
       <v-app-bar app color="transparent">
@@ -14,8 +16,7 @@
             height="40"
         /></a>
 
-        <!-- <v-toolbar-title>Application</v-toolbar-title> -->
-        <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon  @click="drawer = !drawer"></v-app-bar-nav-icon>
       </v-app-bar>
 
       <v-main>
@@ -37,7 +38,7 @@
 
 <script>
 import Main from "./components/Main";
-// import Menu from "./components/Menu";
+import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 
 export default {
@@ -45,7 +46,7 @@ export default {
 
   components: {
     Main,
-    // Menu,
+    Menu,
     Footer,
   },
 
