@@ -8,7 +8,7 @@
         <Menu></Menu>
       </v-navigation-drawer>
 
-      <v-app-bar app color="transparent">
+      <v-app-bar app color="yellow">
         <a href="#">
           <img
             class="mr-3"

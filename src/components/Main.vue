@@ -6,33 +6,16 @@
       </div>
 
       <div class="main-list">
-        <v-list-item>
+        <v-list-item v-for="item in items" :key="item">
           <v-list-item-content>
             <a href="#"
               ><v-list-item-title class="pink--text"
-                >I am new here</v-list-item-title
+                >{{item}}</v-list-item-title
               ></a
             >
           </v-list-item-content>
         </v-list-item>
-        <v-list-item>
-          <v-list-item-content>
-            <a href="#"
-              ><v-list-item-title class="pink--text"
-                >I want to change the world</v-list-item-title
-              ></a
-            >
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item>
-          <v-list-item-content>
-            <a href="#"
-              ><v-list-item-title class="pink--text"
-                >I want to know how to help</v-list-item-title
-              ></a
-            >
-          </v-list-item-content>
-        </v-list-item>
+        
       </div>
 
       <div class="buttons">
@@ -46,6 +29,11 @@
 <script>
 export default {
   name: "Main",
+  data: function() {
+return {
+    items: ['I am new here', 'I want to change the world', 'I want to know how to help']
+  };
+}
 };
 </script>
 
