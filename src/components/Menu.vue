@@ -1,7 +1,5 @@
 <template>
 <v-container>
-  
-</v-container>
   <v-app>
     <v-card class="flex" flat tile>
       <v-row class="text-center">
@@ -83,6 +81,8 @@
       </v-row>
     </v-card>
   </v-app>
+</v-container>
+
 </template>
 
 <script>

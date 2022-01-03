@@ -4,7 +4,7 @@
       <v-row class="text-center">
         <v-col lg="12">
 
-          <v-container class="indigo darken-4">
+          <v-container fluid class="indigo darken-4">
             <v-row no-gutters>
               <v-col cols="12" sm="6" md="6">
                 <v-list-item>
@@ -82,3 +82,7 @@ export default {
   }),
 };
 </script>
+
+<style>
+
+</style>

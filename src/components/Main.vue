@@ -49,5 +49,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+.container{
+  margin: 5em 0 5em 0;
+}
 </style>
