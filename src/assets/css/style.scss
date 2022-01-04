@@ -19,7 +19,8 @@
   }
 }
 
-.buttons {
+.buttons-list {
+  display: flex;
   position: absolute;
   left: 70%;
 }
@@ -31,6 +32,33 @@
 a {
   text-decoration: none;
 }
+
+
+
+// SHAPES
+.rectangle {
+  height: 50px;
+  width: 100px;
+  background-color: #555;
+  border-radius:25px;
+
+  .circle{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+  }
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+
+// MEDIA QUERIES
 /* mobile */
 @media (max-width: 480px) {
   #app {
