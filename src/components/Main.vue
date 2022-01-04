@@ -29,7 +29,7 @@
         <a href="">
           <div class="rectangle">
             <div class="circle">
-              </div></div></a>
+              </div><p class="button-list-count">5</p></div></a>
         <a href=""><div class="circle"></div></a>
       </div>
     </div>
