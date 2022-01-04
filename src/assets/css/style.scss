@@ -1,63 +1,65 @@
 #app {
-    /* background-position: center center;
+  /* background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../assets/images/home-image.jpg"); */
 
-    background-color: yellow;
+  background-color: yellow;
+}
+
+.container {
+  position: relative;
+  top: 50%;
+}
+
+.main-list {
+  .v-list-item {
+    left: 60%;
   }
-  
-  .container {
-    position: relative;
-    text-align: center;
-    top: 50%;
-  }
-  
-  .main-list {
-    .v-list-item {
-      left: 17%;
-    }
-  }
-  
-  .buttons {
-      position: absolute;
-      left: 70%;
+}
+
+.buttons {
+  position: absolute;
+  left: 70%;
+}
+
+.float-right {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+}
+/* mobile */
+@media (max-width: 480px) {
+  #app {
+    background-image: url("assets/images/home-image-mobile.jpeg");
   }
 
-  .float-right {
-    float: right;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  /* mobile */
-  @media (max-width: 480px) {
-    #app {
-      background-image: url("assets/images/home-image-mobile.jpeg");
-    }
-  
   .main-list {
     .v-list-item {
       left: 0%;
     }
   }
-  
+
+  .main-head-text {
+    visibility:hidden;
   }
-  
-  /* tablet */
-  @media (min-width: 481px) and (max-width: 1024px) {
-    body {
-      // background-image: url("assets/images/home-image.jpg");
-      background-color: yellow;
-    }
+}
+
+/* tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    // background-image: url("assets/images/home-image.jpg");
+    background-color: yellow;
   }
-  
-  /* desktop */
-  @media (min-width: 1025px) {
-    body {
-      // background-image: url("assets/images/home-image.jpg");
-      background-color: yellow;
-    }
+}
+
+/* desktop */
+@media (min-width: 1025px) {
+  body {
+    // background-image: url("assets/images/home-image.jpg");
+    background-color: yellow;
   }
+}
