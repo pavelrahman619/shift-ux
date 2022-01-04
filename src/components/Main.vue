@@ -29,8 +29,9 @@
         <a href="">
           <div class="rectangle">
             <div class="circle">
-              </div><p class="button-list-count">5</p></div></a>
-        <a href=""><div class="circle"></div></a>
+              </div><b><p class="button-list-count">5</p></b></div></a>
+        <a href=""><div class="circle"><v-icon color="white" size="20px">mdi-comment-processing-outline</v-icon></div></a>
+        <div></div>
       </div>
     </div>
   </v-container>

@@ -1,3 +1,6 @@
+// VARIABLES
+$darkpink: #ed388c;
+
 #app {
   /* background-position: center center;
     background-attachment: fixed;
@@ -42,6 +45,7 @@ a {
   background-color: white;
   border-radius:25px;
   position:relative;
+  outline: thick solid black;
 
   .circle{
     position: absolute;
@@ -51,20 +55,25 @@ a {
     border-radius: 50%;
     left: 20%;
     top: 20%;
-    
+    outline:none;
+    margin-left:0;
   }
 
   .button-list-count{
     text-align: end;
-    padding-right: 5px;
+    padding: 1px 7px 0 0;
+    color: black;
   }
 }
 
-.circle {
-  height: 50px;
-  width: 50px;
-  background-color: white;
+.circle {  
+  height: 25px;
+  width: 25px;
+  background-color: $darkpink;
   border-radius: 50%;
+  outline: thick solid black;
+  margin-left: 15px;
+  text-align: center;
 }
 
 
