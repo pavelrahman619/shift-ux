@@ -30,7 +30,7 @@
           <div class="rectangle">
             <div class="circle">
               </div><b><p class="button-list-count">5</p></b></div></a>
-        <a href=""><div class="circle"><v-icon color="white" size="20px">mdi-comment-processing-outline</v-icon></div></a>
+        <a href=""><div class="circle"><v-icon color="white" size="20px">mdi-chat-processing-outline</v-icon></div></a>
         <div></div>
       </div>
     </div>
@@ -38,17 +38,19 @@
 </template>
 
 <script>
+import mainListItems from '../mixins/mainListItems';
 export default {
   name: "Main",
-  data: function () {
-    return {
-      items: [
-        "I am new here",
-        "I want to change the world",
-        "I want to know how to help",
-      ],
-    };
-  },
+  // data: function () {
+  //   return {
+  //     items: [
+  //       "I am new here",
+  //       "I want to change the world",
+  //       "I want to know how to help",
+  //     ],
+  //   };
+  // },
+  mixins: [mainListItems]
 };
 </script>
 

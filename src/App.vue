@@ -2,33 +2,21 @@
   <div id="app">
     <span class="bg"></span>
     <v-app>
-      <v-navigation-drawer app right hide-overlay="true" v-model="drawer" width="100%">
-        <!--  -->
-        <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-        <Menu></Menu>
-      </v-navigation-drawer>
-
-      <v-app-bar app color="yellow">
-        <a href="#">
-          <img
-            class="mr-3"
-            :src="require('./assets/images/shift-logo.png')"
-            height="40"
-        /></a>
-
-        <v-app-bar-nav-icon  @click="drawer = !drawer"></v-app-bar-nav-icon>
-      </v-app-bar>
+      <header>
+        <div>
+          <Header></Header>
+        </div>
+      </header>
 
       <v-main>
         <!--  -->
         <div>
           <Main></Main>
         </div>
-        
 
         <div>
           <!-- <Menu /> -->
-          <Footer /> 
+          <Footer />
         </div>
       </v-main>
     </v-app>
@@ -37,20 +25,20 @@
 
 
 <script>
+import Header from "./components/Header";
 import Main from "./components/Main";
-import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 
 export default {
   name: "App",
 
   components: {
+    Header,
     Main,
-    Menu,
     Footer,
   },
 
-  data: () => ({ drawer: false }),
+  data: () => ({}),
 };
 </script>
 

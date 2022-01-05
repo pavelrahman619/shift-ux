@@ -10,7 +10,7 @@
                 <v-list-item>
                   <v-list-item-content>
                     <v-list-item-title class="pink--text font-weight-black"
-                      >I am new here<v-chip class="ma-2 font-weight-light" color="pink lighten-1" text-color="white">
+                      >{{items[0]}}<v-chip class="ma-2 font-weight-light" color="pink lighten-1" text-color="white">
                         You are here
                       </v-chip></v-list-item-title
                     >
@@ -19,7 +19,7 @@
                 <v-list-item>
                   <v-list-item-content>
                     <v-list-item-title class="white--text font-weight-black"
-                      >I want to change the world</v-list-item-title
+                      >{{items[1]}}</v-list-item-title
                     >
                     
                   </v-list-item-content>
@@ -28,7 +28,7 @@
                   <v-list-item-content>
                     <a href="#"
                       ><v-list-item-title class="white--text"
-                        >I want to found their ideas</v-list-item-title
+                        >{{items[2]}}</v-list-item-title
                       ></a
                     >
                   </v-list-item-content>
@@ -74,12 +74,15 @@
 </template>
 
 <script>
+import mainListItems from '../mixins/mainListItems';
+
 export default {
   name: "Footer",
 
   data: () => ({
     icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
   }),
+  mixins: [mainListItems],
 };
 </script>
 
