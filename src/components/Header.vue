@@ -1,5 +1,5 @@
 <template>
-  <div v-flex>
+  <div>
     <v-navigation-drawer
       app
       right

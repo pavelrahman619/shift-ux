@@ -19,9 +19,7 @@
           <!-- <Footer /> -->
         </div>
 
-        <div>
           <MakeAPlan1></MakeAPlan1>
-        </div>
       </v-main>
     </v-app>
   </div>
