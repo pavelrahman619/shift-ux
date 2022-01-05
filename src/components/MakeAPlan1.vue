@@ -319,12 +319,30 @@
       <v-row justify="center">
         <v-btn class="pink white--text">Nope, send me more details</v-btn>
       </v-row>
+
+      <br />
+      <br />
+      <br />
+      <v-row justify="center">
+        <v-btn v-for="icon in icons" :key="icon" class="mx-4 black--text" icon>
+          <v-icon size="24px">
+            {{ icon }}
+          </v-icon>
+        </v-btn>
+      </v-row>
     </v-container>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "MakeAPlan1",
+
+  components: {},
+  data: () => ({
+    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
+  }),
+};
 </script>
 
 <style>
