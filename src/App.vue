@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <span class="bg"></span>
+    <!-- <span class="bg"></span> -->
     <v-app>
       <header>
         <div>
@@ -11,12 +11,16 @@
       <v-main>
         <!--  -->
         <div>
-          <Main></Main>
+          <!-- <Main></Main> -->
         </div>
 
         <div>
           <!-- <Menu /> -->
-          <Footer />
+          <!-- <Footer /> -->
+        </div>
+
+        <div>
+          <MakeAPlan1></MakeAPlan1>
         </div>
       </v-main>
     </v-app>
@@ -26,16 +30,18 @@
 
 <script>
 import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+// import Main from "./components/Main";
+// import Footer from "./components/Footer";
+import MakeAPlan1 from "./components/MakeAPlan1";
 
 export default {
   name: "App",
 
   components: {
     Header,
-    Main,
-    Footer,
+    // Main,
+    // Footer,
+    MakeAPlan1
   },
 
   data: () => ({}),
