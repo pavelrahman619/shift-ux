@@ -35,3 +35,7 @@ export default {
   data: () => ({}),
 };
 </script>
+<<<<<<< HEAD
+=======
+
+>>>>>>> b6203afbcf6391e11aeba0588b1d784026d0e6cc
