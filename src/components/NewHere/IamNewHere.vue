@@ -35,8 +35,4 @@ export default {
   data: () => ({}),
 };
 </script>
-<style lang="scss">
 
-@import "../src/assets/css/style.scss";
-
-</style>
