@@ -12,6 +12,8 @@
         <!--  -->
         <div>
           <!-- <Main></Main> -->
+          <!-- <MakeAPlan1></MakeAPlan1> -->
+          <MakeAPlan2></MakeAPlan2>
         </div>
 
         <div>
@@ -19,7 +21,6 @@
           <!-- <Footer /> -->
         </div>
 
-          <MakeAPlan1></MakeAPlan1>
       </v-main>
     </v-app>
   </div>
@@ -30,7 +31,8 @@
 import Header from "./components/Header";
 // import Main from "./components/Main";
 // import Footer from "./components/Footer";
-import MakeAPlan1 from "./components/MakeAPlan1";
+// import MakeAPlan1 from "./components/MakeAPlan1";
+import MakeAPlan2 from "./components/MakeAPlan2";
 
 export default {
   name: "App",
@@ -39,7 +41,8 @@ export default {
     Header,
     // Main,
     // Footer,
-    MakeAPlan1
+    // MakeAPlan1,
+    MakeAPlan2
   },
 
   data: () => ({}),
