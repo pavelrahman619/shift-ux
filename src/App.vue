@@ -2,25 +2,17 @@
   <div id="app">
     <!-- <span class="bg"></span> -->
     <v-app>
-      <header>
-        <div>
-          <Header></Header>
-        </div>
-      </header>
-
+      <Header></Header>
       <v-main>
-        <!--  -->
-        <div>
+        <!-- Provides the application the proper gutter -->
+        <v-container fluid>
+          <!--  -->
           <!-- <Main></Main> -->
           <!-- <MakeAPlan1></MakeAPlan1> -->
           <MakeAPlan2></MakeAPlan2>
-        </div>
-
-        <div>
           <!-- <Menu /> -->
           <!-- <Footer /> -->
-        </div>
-
+        </v-container>
       </v-main>
     </v-app>
   </div>
@@ -42,7 +34,7 @@ export default {
     // Main,
     // Footer,
     // MakeAPlan1,
-    MakeAPlan2
+    MakeAPlan2,
   },
 
   data: () => ({}),
