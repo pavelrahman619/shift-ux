@@ -90,6 +90,17 @@ a {
 }
 
 
+.circle-empty {  
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  outline: thin solid black;
+  margin-left: 15px;
+  text-align: center;
+}
+
+
 // .v-btn {
 //   padding-left: 12px;
 //   padding-right: 12px;
@@ -105,13 +116,24 @@ a {
 }
 
 
+.border1{
+  border-top: thick solid black;
+  border-bottom: thick solid black;
+}
+
+.border2.v-card.v-sheet.theme--light{
+  border-left: thick solid black;
+  border-right: thick solid black;
+}
+
+
 
 
 // MEDIA QUERIES
 /* mobile */
 @media (max-width: 480px) {
   #app {
-    background-image: url("assets/images/home-image-mobile.jpeg");
+    // background-image: url("assets/images/home-image-mobile.jpeg");
   }
 
   .main-list {
