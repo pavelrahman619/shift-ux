@@ -1,19 +1,22 @@
 <template>
   <div id="app">
     <!-- <span class="bg"></span> -->
-    <v-app>
+    <v-app id="main-content">
       <Header></Header>
-      <v-main>
+
+      <!-- Sizes your content based upon application components -->
+      <v-main >
         <!-- Provides the application the proper gutter -->
-        <v-container fluid>
+        <!-- <v-container fluid> -->
+
           <!--  -->
           <!-- <Main></Main> -->
           <!-- <MakeAPlan1></MakeAPlan1> -->
           <MakeAPlan2></MakeAPlan2>
           <!-- <Menu /> -->
-          <!-- <Footer /> -->
-        </v-container>
+        <!-- </v-container> -->
       </v-main>
+          <Footer></Footer>
     </v-app>
   </div>
 </template>
@@ -22,9 +25,9 @@
 <script>
 import Header from "./components/Header";
 // import Main from "./components/Main";
-// import Footer from "./components/Footer";
 // import MakeAPlan1 from "./components/MakeAPlan1";
 import MakeAPlan2 from "./components/MakeAPlan2";
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
@@ -32,9 +35,9 @@ export default {
   components: {
     Header,
     // Main,
-    // Footer,
     // MakeAPlan1,
     MakeAPlan2,
+    Footer,
   },
 
   data: () => ({}),

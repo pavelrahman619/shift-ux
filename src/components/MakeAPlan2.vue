@@ -1,6 +1,6 @@
 <template>
   <div class="white">
-    <v-container fluid class="yellow lighten-5 plan-main-text">
+    <v-container fluid class="yellow lighten-5 plan-main-text" fill-height1>
       <v-row>
         <h1 class="">
           The <br />
@@ -15,7 +15,7 @@
       </v-row>
     </v-container>
 
-    <v-container fluid>
+    <v-container fluid fill-height1>
       <v-row justify="center" class="align-center">
         <v-card>
           <v-col>
@@ -35,29 +35,27 @@
 
     <v-container fluid>
       <v-form>
-        <v-container fluid>
-          <v-row>
-            <v-col cols="6">
-              <v-row v-for="i in 4" :key="i">
-                <v-text-field :label="`Problem ${i}`" required></v-text-field>
-              </v-row>
-            </v-col>
+        <v-row>
+          <v-col cols="6">
+            <v-row v-for="i in 4" :key="i">
+              <v-text-field :label="`Problem ${i}`" required></v-text-field>
+            </v-row>
+          </v-col>
 
-            <v-col cols="2"></v-col>
-            <v-col cols="4">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </v-col>
-          </v-row>
-        </v-container>
+          <v-col cols="2"></v-col>
+          <v-col cols="4">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </v-col>
+        </v-row>
       </v-form>
     </v-container>
 
-    <v-container fluid>
+    <v-container fluid fill-height1>
       <v-row>
         <h2>Need help? Learn from young mentors</h2>
       </v-row>
@@ -142,16 +140,12 @@
           </v-card-actions>
         </v-card>
       </v-row>
-
-      <br />
-      <br />
+      
       <v-row justify="center" align="center" class="pink">
-        <v-card class="pink">
           <h1>
             <span class="yellow--text">What's next? </span>
             <span class="white--text">The Goal</span>
           </h1>
-        </v-card>
       </v-row>
     </v-container>
   </div>
@@ -161,7 +155,7 @@
 // import Footer from "./Footer";
 
 export default {
-  name: "MakeAPlan1",
+  name: "MakeAPlan2",
 
   components: {
     // Footer,

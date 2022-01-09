@@ -1,6 +1,7 @@
 // VARIABLES
 $darkpink: #ed388c;
 
+
 // #app {
 //   /* background-position: center center;
 //     background-attachment: fixed;
@@ -18,9 +19,15 @@ $darkpink: #ed388c;
   
 // }
 
-.container {
+.fill-height1 {
   height: 100vh;
 }
+
+#footer {
+  position:relative;
+  margin-top:15em;
+}
+
 
 .main-list {
   .v-list-item {
@@ -115,6 +122,10 @@ a {
 
   .main-head-text {
     visibility:hidden;
+  }
+  #footer {
+    position:relative;
+    margin-top:40em;
   }
 }
 
