@@ -43,7 +43,7 @@
               outlined
             >
               <v-row align="center" justify="space-around">
-                <v-btn class="white--text" color="pink">Found us ! </v-btn>
+                <v-btn outlined class="pink white--text"> Found us ! </v-btn>
               </v-row>
             </v-card>
           </v-col>
@@ -55,7 +55,7 @@
               outlined
             >
               <v-row align="end" justify="space-around">
-                <v-btn class="white--text" color="pink"> Found us ! </v-btn>
+                <v-btn outlined class="pink white--text"> Found us ! </v-btn>
               </v-row>
             </v-card>
           </v-col>
@@ -126,9 +126,14 @@
               <v-text-field label="Message" single-line></v-text-field>
             </v-col>
           </v-row>
-          <v-row align="center" justify="space-around">
-            <v-btn class="white--text" color="pink"> Submit </v-btn>
+
+          <v-card-actions>
+          <v-row align="center" justify="space-around" outlined>
+            <v-btn outlined class="pink white--text"> Submit </v-btn>
           </v-row>
+ </v-card-actions>
+
+
         </v-card>
       </div>
     </div>

@@ -1,22 +1,10 @@
 <template>
   <v-app>
-    <v-card class="overflow-hidden">
-      <v-app-bar absolute color="white" elevate-on-scroll elevation="4">
-        <v-toolbar-side-icon>
-          <v-img class="mr-3" src="@/assets/l1.png" height="50px" width="150px"> </v-img>
-        </v-toolbar-side-icon>
-
-        <v-spacer></v-spacer>
-        <v-app-bar-nav-icon> </v-app-bar-nav-icon>
-      </v-app-bar>
-      <v-sheet id="scrolling-techniques-7" max-height="80">
-        <v-container style="height: 150px"> </v-container>
-      </v-sheet>
-    </v-card>
-
     <v-main>
-      <IamNewHere />
-      <Howtohelp />
+      <Header />
+      <Changeworld />
+      <!-- <IamNewHere />  -->
+     <!-- <Howtohelp />  -->
       <!-- <Menu /> -->
       <Footer />
     </v-main>
@@ -25,19 +13,29 @@
 </template>
 
 <script>
+
+
+
+
+
+import Header from "./components/Header.vue";
 import Footer from "./components/Footer";
 // import Menu from "./components/Menu";
-import IamNewHere from "./components/NewHere/IamNewHere.vue";
-import Howtohelp from "./components/HowToHelp/Howtohelp.vue";
+// import IamNewHere from "./components/NewHere/IamNewHere.vue";
+// import Howtohelp from "./components/HowToHelp/Howtohelp.vue";
+import Changeworld from "./components/ChangeTheWorld/Changeworld.vue";
 
 export default {
   name: "App",
 
   components: {
     // Menu,
+    Header,
+    Changeworld,
     Footer,
-    IamNewHere,
-    Howtohelp,
+    // IamNewHere,
+    // Howtohelp,
+    
   },
 
   data: () => ({ drawer: false }),
