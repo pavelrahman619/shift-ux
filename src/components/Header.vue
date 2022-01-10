@@ -6,9 +6,11 @@
       hide-overlay="true"
       v-model="drawer"
       width="100%"
+      height="100%"
+      absolute
     >
       <!--  -->
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <!-- <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon> -->
       <Menu></Menu>
     </v-navigation-drawer>
 

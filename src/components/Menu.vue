@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <v-card class="flex" flat tile>
+  <v-container>
+    <v-card class="flex mt-10" flat tile>
       <v-row class="text-center">
         <v-flex align-self-center>
           <v-img
@@ -86,7 +86,7 @@
         <!-- <v-divider></v-divider> -->
       </v-row>
     </v-card>
-  </v-app>
+  </v-container>
 </template>
 
 <script>
