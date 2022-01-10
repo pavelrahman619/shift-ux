@@ -1,56 +1,168 @@
-#app {
-    /* background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../public/images/home-image.jpg"); */
-    background-color: yellow;
-  }
+// VARIABLES
+$darkpink: #ed388c;
+
+
+// #app {
+//   /* background-position: center center;
+//     background-attachment: fixed;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-image: url("../assets/images/home-image.jpg"); */
+
+//   background-color: yellow;
+// }
+
+// .container {
+//   position: relative;
+//   top: 50%;
+//   padding-left:7%;
   
-  .container {
-    position: relative;
-    text-align: center;
-    top: 50%;
+// }
+
+.fill-height1 {
+  height: 100vh;
+}
+
+.v-footer {
+  position:relative;
+  margin-top:15em;
+}
+
+
+.main-list {
+  .v-list-item {
+    left: 60%;
   }
-  
-  .main-list {
-    .v-list-item {
-      left: 17%;
-    }
+}
+
+.buttons-list {
+  display: flex;
+  position: absolute;
+  left: 70%;
+}
+
+.float-right {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+// SHAPES
+.rectangle {
+  height: 25px;
+  width: 50px;
+  background-color: white;
+  border-radius:25px;
+  position:relative;
+  outline: thick solid black;
+
+  .circle{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: yellow; 
+    border-radius: 50%;
+    left: 20%;
+    top: 20%;
+    outline:none;
+    margin-left:0;
   }
-  
-  .buttons {
-      position: absolute;
-      left: 70%;
+
+  .button-list-count{
+    text-align: end;
+    padding: 1px 7px 0 0;
+    color: black;
   }
-  
-  a {
-    text-decoration: none;
+}
+
+.circle {  
+  height: 25px;
+  width: 25px;
+  background-color: $darkpink;
+  border-radius: 50%;
+  outline: thick solid black;
+  margin-left: 15px;
+  text-align: center;
+}
+
+
+.circle-empty {  
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  outline: thin solid black;
+  margin-left: 15px;
+  text-align: center;
+}
+
+
+// .v-btn {
+//   padding-left: 12px;
+//   padding-right: 12px;
+// }
+
+
+// My Plans css
+
+.plan-main-text {
+  h1,h2 {
+    padding: 2em;
   }
-  /* mobile */
-  @media (max-width: 480px) {
-    #app {
-      background-image: url("../public/images/home-image-mobile.jpeg");
-    }
-  
+}
+
+
+.border1{
+  border-top: thick solid black;
+  border-bottom: thick solid black;
+}
+
+.border2.v-card.v-sheet.theme--light{
+  border-left: thick solid black;
+  border-right: thick solid black;
+}
+
+
+
+
+// MEDIA QUERIES
+/* mobile */
+@media (max-width: 480px) {
+  #app {
+    // background-image: url("assets/images/home-image-mobile.jpeg");
+  }
+
   .main-list {
     .v-list-item {
       left: 0%;
     }
   }
-  
+
+  .main-head-text {
+    visibility:hidden;
   }
-  
-  /* tablet */
-  @media (min-width: 481px) and (max-width: 1024px) {
-    body {
-      background-image: url("../public/images/home-image.jpg");
-    }
+  #footer {
+    position:relative;
+    margin-top:40em;
   }
-  
-  /* desktop */
-  @media (min-width: 1025px) {
-    body {
-      background-image: url("../public/images/home-image.jpg");
-    }
+}
+
+/* tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    // background-image: url("assets/images/home-image.jpg");
+    // background-color: yellow;
   }
+}
+
+/* desktop */
+@media (min-width: 1025px) {
+  body {
+    // background-image: url("assets/images/home-image.jpg");
+    // background-color: yellow;
+  }
+}
