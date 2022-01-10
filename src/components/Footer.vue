@@ -1,5 +1,5 @@
 <template>
-  <v-footer app absolute dark padless id="footer">
+  <v-footer app absolute dark padless class="">
     <v-card flat tile class="indigo darken-4 white--text text-center flex">
       <v-row class="text-center">
         <v-col lg="12">
