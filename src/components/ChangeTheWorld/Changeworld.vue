@@ -81,9 +81,53 @@
     <!-- end video -->
 
   <div class="container">
-      <h1 class="pink--text font-weight-black text-sm-left">Meet the team</h1>
-   
   
+  
+  <v-sheet
+    class="mx-auto"
+    elevation="8"
+    max-width="100%"
+    
+  >
+   <h1 class="header font-weight-black text-sm-left">Meet the team </h1>
+    <v-slide-group
+      v-model="model"
+      class="pa-4"
+      prev-icon="mdi-minus"
+      next-icon="mdi-plus"
+      show-arrows
+    >
+      <v-slide-item
+        v-for="n in 15"
+        :key="n"
+        v-slot="{ active, toggle }"
+      >
+        <v-card
+          :color="active ? 'primary' : 'grey lighten-1'"
+          class="ma-4"
+          height="200"
+          width="200"
+          @click="toggle"
+        >
+
+
+                  <h2 class="white--text font-weight-black text-sm-left">Make A Plan</h2>
+                    <a href="#">
+        <img
+          class="mr-3"
+          :src="require('@/assets/l1.png')"
+          height="100"
+           
+      /></a>
+            
+
+    
+        </v-card>
+      </v-slide-item>
+    </v-slide-group>
+  </v-sheet>
+
+     
   
     </div>
 
@@ -92,6 +136,7 @@
 
 
     <v-main>
+      <Child />
       <ShiftProducts />
     </v-main>
   </v-app>
@@ -99,9 +144,11 @@
 
 <script>
 import ShiftProducts from "../../components/NewHere/ShiftProducts.vue";
+import Child from "./Child.vue";
 export default {
   name: "Changeworld",
     components: {
+      Child,
       ShiftProducts,
     },
 
