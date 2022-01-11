@@ -1,13 +1,18 @@
 <template>
   <v-app>
-    <v-main>
-      <Header />
+    <Header />
       <Changeworld />
+      <!-- <Howtohelp />  -->
+    <v-main>
+      
       <!-- <IamNewHere />  -->
-     <!-- <Howtohelp />  -->
+     
       <!-- <Menu /> -->
-      <Footer />
+     
+
+       <slot/>
     </v-main>
+     <Footer />
   </v-app>
 
 </template>

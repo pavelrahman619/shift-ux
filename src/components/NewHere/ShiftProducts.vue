@@ -8,7 +8,7 @@
           <v-col cols="6">
             <v-row no-gutters>
               <v-col cols="12">
-                <v-card class="pa-2 pink box1" height="200px" width="500px" label>
+                <v-card class="pa-2 pink box1" height="200px" width="100%" label>
                   <h2 class="white--text font-weight-black text-sm-left">
                     Apply for founding
                   </h2>
@@ -16,7 +16,7 @@
               </v-col>
 
               <v-col cols="12">
-                <v-card class="pa-2 pink box1" height="350px" width="500px" label>
+                <v-card class="pa-2 pink box1" height="350px" width="100%" label>
                   <h2 class="white--text font-weight-black text-sm-left">Make A Plan</h2>
                 </v-card>
               </v-col>
@@ -32,7 +32,7 @@
                 </v-row>
 
                 <v-col cols="12">
-                  <v-card class="pa-2 pink box1" height="450px" width="500px" label>
+                  <v-card class="pa-2 pink box1 box" label>
                     <h2 class="white--text font-weight-black text-sm-left">
                       Learn from a guide
                     </h2>
