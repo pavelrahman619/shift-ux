@@ -32,12 +32,12 @@
       <v-row justify="center" class="border1">
         <v-card height="480" width="1280" class="border2 text-center">
           <v-row>
-            <v-col cols="6">
+            <v-col cols="12" md="6" lg="6">
               <v-row> Add picture here </v-row>
             </v-col>
 
-            <v-col cols="2"></v-col>
-            <v-col cols="4">
+            <v-col cols="12" md="2" lg="2"></v-col>
+            <v-col cols="12" md="4" lg="4">
               <v-row>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -60,7 +60,7 @@
         <v-card height="480" width="1280" class="border2 text-center">
           <v-form>
             <v-row>
-              <v-col cols="6">
+              <v-col cols="12" md="6" lg="6">
                 <v-row v-for="i in 3" :key="i">
                   <v-text-field :label="`Goal ${i}`" required></v-text-field>
                 </v-row>
@@ -71,8 +71,8 @@
                 </v-card-actions>
               </v-col>
 
-              <v-col cols="2"></v-col>
-              <v-col cols="4">
+              <v-col cols="12" md="2" lg="2"></v-col>
+              <v-col cols="12" md="4" lg="4">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.

@@ -15,20 +15,18 @@
       </v-row>
     </v-container>
 
-    <v-container fluid>
-      <v-row justify="center">
-        <v-card>
-          <v-col>
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/nhBVL41-_Cw"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </v-col>
+    <v-container fluid fill-height1>
+      <v-row justify="center" class="border1">
+        <v-card height="480" width="1280" class="border2 text-center">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/nhBVL41-_Cw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </v-card>
       </v-row>
     </v-container>
@@ -37,11 +35,11 @@
       <v-form>
         <v-container>
           <v-row>
-            <v-col cols="6" align="center">
+            <v-col cols="12" md="6" lg="6" align="center">
               <v-icon size="5em"> mdi-upload </v-icon>
             </v-col>
 
-            <v-col cols="6">
+            <v-col cols="12" md="6" lg="6">
               <v-row>
                 <v-text-field
                   :counter="50"
@@ -81,10 +79,10 @@
 
     <v-container fluid>
       <v-row>
-        <v-col cols="8">
+        <v-col cols="12" md="6" lg="8">
           <h2>...or pick a card and fill up at your own pace</h2>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="12" md="6" lg="4">
           <a href="#" class="pink--text">I want to see a sample</a>
         </v-col>
       </v-row>
@@ -92,7 +90,7 @@
       <v-row><h2>Your Plan</h2> </v-row>
 
       <v-row>
-        <v-col cols="6">
+        <v-col cols="12" md="6" lg="6">
           <v-card class="yellow lighten-5">
             <v-card-title>
               <h1>The Problem</h1>
@@ -117,7 +115,7 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" md="6" lg="6">
           <v-card class="yellow lighten-5">
             <v-card-title>
               <h1>The Problem</h1>
@@ -145,7 +143,7 @@
       </v-row>
 
       <v-row>
-        <v-col cols="6">
+        <v-col cols="12" md="6" lg="6">
           <v-card class="yellow lighten-5">
             <v-card-title>
               <h1>The Problem</h1>
@@ -170,7 +168,7 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" md="6" lg="6">
           <v-card class="yellow lighten-5">
             <v-card-title>
               <h1>The Problem</h1>
