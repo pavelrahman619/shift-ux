@@ -27,17 +27,17 @@ $darkpink: #ed388c;
   margin-top: 15em;
 }
 
-.main-list {
-  .v-list-item {
-    left: 60%;
-  }
-}
+// .main-list {
+//   .v-list-item {
+//     left: 60%;
+//   }
+// }
 
-.buttons-list {
-  display: flex;
-  position: absolute;
-  left: 70%;
-}
+// .buttons-list {
+//   display: flex;
+//   position: absolute;
+//   left: 70%;
+// }
 
 .float-right {
   float: right;
@@ -51,37 +51,47 @@ a {
 
 // MAIN PAGE SHAPES
 .main-shape-1 {
-  width: 100vw;
-  height: 30vw;
+  width: 20vw;
+  height: 5vw;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.main-shape-2 {
+  width: 20vw;
+  height: 5vw;
   background-color: white;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-// .triangle {
-//   background-color:red;
-//   width: 100vw;
-//   height: 30vw;
+.main-shape-3 {
+  width: 15vw;
+  height: 8vw;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
 
-//   .triangle-down {
-//     border-left: 50px solid transparent;
-//     border-right: 50px solid transparent;
-//     border-top: 100px solid #32557f;
-//   }
-// }
+.main-shape-4 {
+  width: 15vw;
+  height: 3vw;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 .main-arrow-mobile {
-  width:5vw;
-  height:100vw;
-  background-color:$darkpink;
-  position:absolute;
-  margin-left:10%;
-  padding-bottom:5em;
+  width: 5vw;
+  height: 100vw;
+  background-color: $darkpink;
+  position: absolute;
+  margin-left: 10%;
+  padding-bottom: 5em;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-
-
-
 
 .rectangle {
   height: 25px;
@@ -130,6 +140,15 @@ a {
   text-align: center;
 }
 
+.circle-empty-main {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 15px;
+  text-align: center;
+}
+
 // .v-btn {
 //   padding-left: 12px;
 //   padding-right: 12px;
@@ -174,6 +193,14 @@ a {
   #footer {
     position: relative;
     margin-top: 40em;
+  }
+
+  .main-shape-2 {
+    width: 100vw;
+    height: 30vw;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 }
 
