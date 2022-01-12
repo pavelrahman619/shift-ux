@@ -6,14 +6,7 @@
       </h1>
     </row>
 
-    <v-row class="justify-center pa-2">
-      <div class="main-shape-1"></div>
-    </v-row>
-    <v-row class="pa-2">
-      <v-card width="100%" rounded>
-        <v-img src="@/assets/images/homepage/1.png" height="auto"> </v-img>
-      </v-card>
-    </v-row>
+    <MainMobile />
 
     <div class="main-list">
       <v-flex shrink>
@@ -45,13 +38,13 @@
           <v-icon color="white" size="20px">mdi-chat-processing-outline</v-icon>
         </div></a
       >
-      <div></div>
     </div>
   </v-container>
 </template>
 
 <script>
 import mainListItems from "../mixins/mainListItems";
+import MainMobile from "./MainMobile";
 export default {
   name: "Main",
   // data: function () {
@@ -63,6 +56,9 @@ export default {
   //     ],
   //   };
   // },
+  components: {
+    MainMobile,
+  },
   mixins: [mainListItems],
 };
 </script>
