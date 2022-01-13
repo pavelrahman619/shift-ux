@@ -12,11 +12,12 @@
         <!-- <v-container fluid> -->
 
           <!--  -->
-          <Main></Main>
+          <!-- <Main></Main> -->
           <!-- <MakeAPlan1></MakeAPlan1> -->
           <!-- <MakeAPlan2></MakeAPlan2> -->
           <!-- <MakeAPlan3></MakeAPlan3> -->
           <!-- <MakeAPlan31></MakeAPlan31> -->
+          <MakeAPlanHover></MakeAPlanHover>
           <!-- <Menu /> -->
         <!-- </v-container> -->
       </v-main>
@@ -28,11 +29,12 @@
 
 <script>
 import Header from "./components/Header";
-import Main from "./components/Main";
+// import Main from "./components/Main";
 // import MakeAPlan1 from "./components/MakeAPlan1";
 // import MakeAPlan2 from "./components/MakeAPlan2";
 // import MakeAPlan3 from "./components/MakeAPlan3";
 // import MakeAPlan31 from "./components/MakeAPlan31";
+import MakeAPlanHover from "./components/MakeAPlan/MakeAPlanHover";
 import Footer from "./components/Footer";
 
 export default {
@@ -40,11 +42,12 @@ export default {
 
   components: {
     Header,
-    Main,
+    // Main,
     // MakeAPlan1,
     // MakeAPlan2,
     // MakeAPlan3,
     // MakeAPlan31,
+    MakeAPlanHover,
     Footer,
   },
 
