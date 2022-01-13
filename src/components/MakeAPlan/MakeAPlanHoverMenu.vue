@@ -31,7 +31,6 @@
         <v-icon class="white--text">mdi-refresh</v-icon>
         Show me more</v-btn
       >
-      <a href="#">Go to guide page</a>
       <v-btn class="pink white--text">Go to Guide Page</v-btn>
     </v-row>
   </v-container>
