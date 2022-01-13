@@ -1,5 +1,7 @@
 <template>
+
   <base-layout>
+  
     <div class="container">
       <!-- <v-flex xs12 sm12 md4> -->
       <v-card
@@ -32,7 +34,7 @@
       <v-toolbar-title>Sort by:</v-toolbar-title>
       
       <v-toolbar-items class="hidden-xs-only">
-        <v-btn text class="CLICK-ME" @click="$event.target.classList.toggle('pink')"><router-link to="/">Country</router-link></v-btn>
+      <v-toolbar-items text class="CLICK-ME" @click="$event.target.classList.toggle('pink')">Country</v-toolbar-items>
         <v-btn text class="CLICK-ME" @click="$event.target.classList.toggle('pink')"><router-link to="/">Need more funding</router-link></v-btn>
         <v-btn text><router-link to="/">Fully-funded</router-link></v-btn>
         <v-btn text><router-link to="/">Topic</router-link></v-btn>
@@ -74,22 +76,16 @@
           <v-slide-item v-for="n in 9" :key="n">
             <v-card
               :color="active ? 'primary' : '#FDFBEF'"
-              class="ma-4 profile"
+              class="ma-4 profile d-flex align-end mb-6"
               height="350"
-              width="100%"
+              width="350"
               @click="toggle"
             >
               <!-- <h2 class="white--text font-weight-black text-sm-left">Make A Plan</h2> -->
-              <a href="#">
-                <img
-                  class="mr-3 image1"
-                  :src="require('@/assets/card1.png')"
-                  height="200px"
-                  width="100%"
-              /></a>
+             
             
               <v-row justify="center">
-              <v-btn outlined class=" pink white--text" elevation="2" x-large
+              <v-btn outlined class=" pink white--text" elevation="2" small
                 >Learn more</v-btn></v-row>
               
             </v-card>
@@ -102,6 +98,45 @@
 
       <!-- From end -->
 
+
+
+
+
+
+
+      <v-row cols="12" md="6" lg="6">
+        <v-card>
+          <v-card-title class="font-weight-bold"> From our Mentors </v-card-title>
+       <v-sheet class="mx-auto" elevation="8" max-width="100%">
+        <v-slide-group
+          v-model="model"
+          class="pa-4"
+          prev-icon="mdi-chevron-left"
+          next-icon="mdi-chevron-right"
+          show-arrows
+        >
+          <v-slide-item v-for="n in 9" :key="n">
+            <v-card
+              :color="active ? 'primary' : '#FDFBEF'"
+              class="ma-4 profile d-flex align-end mb-6"
+              height="350px"
+              width="200px"
+              @click="toggle"
+            >
+              <!-- <h2 class="white--text font-weight-black text-sm-left">Make A Plan</h2> -->
+             
+            
+              <v-row justify="center">
+              <v-btn outlined class="pink white--text btn-style" elevation="2" small
+                >Learn more</v-btn></v-row>
+              
+            </v-card>
+          </v-slide-item>
+        </v-slide-group>
+      </v-sheet></v-card></v-row>
+
+      
+
       <!-- Message box -->
       <v-container>
       <v-row cols="12" justify="center">
@@ -113,9 +148,10 @@
             <v-text-field label="Message" required> </v-text-field>
           </v-card-text>
           <v-card-actions>
+            
             <v-row justify="center">
             <v-col cols="12" lg="2">
-              <v-btn outlined class="pink white--text">Submit</v-btn>
+              <v-btn outlined class="pink white--text btn-style">Submit</v-btn>
             </v-col></v-row>
           </v-card-actions>
         </v-card>
@@ -136,6 +172,10 @@ export default {
     BaseLayout,
   },
 
-  data: () => ({}),
+  data: () => ({ 
+    }),
+
+    
+ 
 };
 </script>

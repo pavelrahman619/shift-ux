@@ -86,21 +86,15 @@
               <v-slide-item v-for="n in 6" :key="n" v-slot="{ active, toggle }">
                 <v-card
                   :color="active ? 'primary' : '#FDFBEF'"
-                  class="ma-4 profile"
+                  class="ma-4 profile d-flex align-end"
                   height="350"
-                  width="100%"
+                  width="250px"
                   @click="toggle"
                 >
-                  <!-- <h2 class="white--text font-weight-black text-sm-left">Make A Plan</h2> -->
-                  <a href="#">
-                    <img
-                      class="mr-3"
-                      :src="require('@/assets/card1.png')"
-                      height="170px"
-                      width="100%"
-                  /></a>
-                  <v-spacer></v-spacer>
+                 
+                
                   <v-row align="end" justify="space-around">
+                     
                     <v-btn outlined class="pink white--text"> Found us ! </v-btn>
                   </v-row>
                 </v-card>
