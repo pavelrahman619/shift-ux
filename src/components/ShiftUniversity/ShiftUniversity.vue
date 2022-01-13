@@ -1,7 +1,5 @@
 <template>
-
   <base-layout>
-  
     <div class="container">
       <!-- <v-flex xs12 sm12 md4> -->
       <v-card
@@ -30,132 +28,192 @@
         <v-card>
           <v-card-title class="font-weight-bold"> From our Mentors </v-card-title>
 
-             <v-toolbar flat class="mainHeader">
-      <v-toolbar-title>Sort by:</v-toolbar-title>
-      
-      <v-toolbar-items class="hidden-xs-only">
-      <v-toolbar-items text class="CLICK-ME" @click="$event.target.classList.toggle('pink')">Country</v-toolbar-items>
-        <v-btn text class="CLICK-ME" @click="$event.target.classList.toggle('pink')"><router-link to="/">Need more funding</router-link></v-btn>
-        <v-btn text><router-link to="/">Fully-funded</router-link></v-btn>
-        <v-btn text><router-link to="/">Topic</router-link></v-btn>
-      </v-toolbar-items>
-      <div class="hidden-sm-and-up">
-        <v-menu offset-y>
-          <template v-slot:activator="{ on }">
-            <v-app-bar-nav-icon v-on="on"></v-app-bar-nav-icon>
-          </template>
-          <v-list class="responsiveMenu">
-            <v-list-item>
-              <v-list-item-title><router-link to="/">Country</router-link></v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title><router-link to="/">Need more funding</router-link></v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title><router-link to="/">Fully-funded</router-link></v-list-item-title>
-            </v-list-item>
-             <v-list-item>
-              <v-list-item-title><router-link to="/">Topic</router-link></v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-      </div>
-    </v-toolbar>
-          
+          <v-toolbar flat class="mainHeader">
+            <v-toolbar-title>Sort by:</v-toolbar-title>
 
-<!-- card -->
+            <v-toolbar-items class="hidden-xs-only">
+              <v-btn text><router-link to="/">Country</router-link></v-btn>
 
- <v-sheet class="mx-auto" elevation="8" max-width="100%">
-        <v-slide-group
-          v-model="model"
-          class="pa-4"
-          prev-icon="mdi-chevron-left"
-          next-icon="mdi-chevron-right"
-          show-arrows
-        >
-          <v-slide-item v-for="n in 9" :key="n">
-            <v-card
-              :color="active ? 'primary' : '#FDFBEF'"
-              class="ma-4 profile d-flex align-end mb-6"
-              height="350"
-              width="350"
-              @click="toggle"
+              <v-btn text><router-link to="/">Need more funding</router-link></v-btn>
+              <v-btn text><router-link to="/">Fully-funded</router-link></v-btn>
+              <v-btn text><router-link to="/">Topic</router-link></v-btn>
+            </v-toolbar-items>
+            <div class="hidden-sm-and-up">
+              <v-menu offset-y>
+                <template v-slot:activator="{ on }">
+                  <v-app-bar-nav-icon v-on="on"></v-app-bar-nav-icon>
+                </template>
+                <v-list class="responsiveMenu">
+                  <v-list-item>
+                    <v-list-item-title
+                      ><router-link to="/">Country</router-link></v-list-item-title
+                    >
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title
+                      ><router-link to="/"
+                        >Need more funding</router-link
+                      ></v-list-item-title
+                    >
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title
+                      ><router-link to="/">Fully-funded</router-link></v-list-item-title
+                    >
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title
+                      ><router-link to="/">Topic</router-link></v-list-item-title
+                    >
+                  </v-list-item>
+                </v-list>
+              </v-menu>
+            </div>
+          </v-toolbar>
+
+          <!-- card -->
+
+          <v-sheet class="mx-auto" elevation="8" max-width="100%">
+            <v-slide-group
+              v-model="model"
+              class="pa-4"
+              prev-icon="mdi-chevron-left"
+              next-icon="mdi-chevron-right"
+              show-arrows
             >
-              <!-- <h2 class="white--text font-weight-black text-sm-left">Make A Plan</h2> -->
-             
-            
-              <v-row justify="center">
-              <v-btn outlined class=" pink white--text" elevation="2" small
-                >Learn more</v-btn></v-row>
-              
-            </v-card>
-          </v-slide-item>
-        </v-slide-group>
-      </v-sheet>
+              <v-slide-item v-for="n in 9" :key="n">
+                <v-card
+                  :color="active ? 'primary' : '#FDFBEF'"
+                  class="ma-4 profile d-flex align-end mb-6"
+                  height="350"
+                  width="350"
+                  @click="toggle"
+                >
+               
 
+                  <v-row justify="center">
+                    <v-btn outlined class="pink white--text" elevation="2" small
+                      >Learn more</v-btn
+                    ></v-row
+                  >
+                </v-card>
+              </v-slide-item>
+            </v-slide-group>
+          </v-sheet>
         </v-card>
       </v-row>
 
       <!-- From end -->
 
-
-
-
-
-
+      <!-- card start( From our young creators) -->
 
       <v-row cols="12" md="6" lg="6">
         <v-card>
-          <v-card-title class="font-weight-bold"> From our Mentors </v-card-title>
-       <v-sheet class="mx-auto" elevation="8" max-width="100%">
-        <v-slide-group
-          v-model="model"
-          class="pa-4"
-          prev-icon="mdi-chevron-left"
-          next-icon="mdi-chevron-right"
-          show-arrows
-        >
-          <v-slide-item v-for="n in 9" :key="n">
-            <v-card
-              :color="active ? 'primary' : '#FDFBEF'"
-              class="ma-4 profile d-flex align-end mb-6"
-              height="350px"
-              width="200px"
-              @click="toggle"
-            >
-              <!-- <h2 class="white--text font-weight-black text-sm-left">Make A Plan</h2> -->
-             
-            
-              <v-row justify="center">
-              <v-btn outlined class="pink white--text btn-style" elevation="2" small
-                >Learn more</v-btn></v-row>
-              
-            </v-card>
-          </v-slide-item>
-        </v-slide-group>
-      </v-sheet></v-card></v-row>
+          <v-card-title class="font-weight-bold"> From our young creators </v-card-title>
+          <!-- From our young creators Menu -->
+          <v-toolbar flat class="mainHeader">
+            <v-toolbar-title>Sort by:</v-toolbar-title>
 
-      
+            <v-toolbar-items class="hidden-xs-only">
+              <v-btn text><router-link to="/">Country</router-link></v-btn>
+
+              <v-btn text><router-link to="/">Need more funding</router-link></v-btn>
+              <v-btn text><router-link to="/">Fully-funded</router-link></v-btn>
+              <v-btn text><router-link to="/">Topic</router-link></v-btn>
+              <v-row class="align-end">
+                <v-btn outlined class="pink white--text btn-style" elevation="2" small
+                  >Visit our Tiktok</v-btn
+                ></v-row
+              >
+            </v-toolbar-items>
+            <div class="hidden-sm-and-up">
+              <v-menu offset-y>
+                <template v-slot:activator="{ on }">
+                  <v-app-bar-nav-icon v-on="on"></v-app-bar-nav-icon>
+                </template>
+                <v-list class="responsiveMenu">
+                  <v-list-item>
+                    <v-list-item-title
+                      ><router-link to="/">Country</router-link></v-list-item-title
+                    >
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title
+                      ><router-link to="/"
+                        >Need more funding</router-link
+                      ></v-list-item-title
+                    >
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title
+                      ><router-link to="/">Fully-funded</router-link></v-list-item-title
+                    >
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title
+                      ><router-link to="/">Topic</router-link></v-list-item-title
+                    >
+                  </v-list-item>
+
+                  <v-btn outlined class="pink white--text btn-style" elevation="2" small
+                    >Learn more</v-btn
+                  >
+                </v-list>
+              </v-menu>
+            </div>
+          </v-toolbar>
+
+          <!--End From our young creators Menu -->
+
+          <v-sheet class="mx-auto" elevation="8" max-width="100%">
+            <v-slide-group
+              v-model="model"
+              class="pa-4"
+              prev-icon="mdi-chevron-left"
+              next-icon="mdi-chevron-right"
+              show-arrows
+            >
+              <v-slide-item v-for="n in 9" :key="n">
+                <v-card
+                  :color="active ? 'primary' : '#FDFBEF'"
+                  class="ma-4 profile d-flex align-end mb-6"
+                  height="350px"
+                  width="200px"
+                  @click="toggle"
+                >
+                  <v-row justify="center">
+                    <v-btn outlined class="pink white--text btn-style" elevation="2" small
+                      >Learn more</v-btn
+                    >
+                  </v-row>
+                </v-card>
+              </v-slide-item>
+            </v-slide-group>
+          </v-sheet></v-card
+        ></v-row
+      >
+
+      <!-- card end -->
 
       <!-- Message box -->
       <v-container>
-      <v-row cols="12" justify="center">
-        <v-card width="500" height="500">
-          <v-card-title> Want to inspire young people? Drop us an email </v-card-title>
-          <v-card-text>
-            <v-text-field label="Name" required> </v-text-field>
-            <v-text-field label="Email" required> </v-text-field>
-            <v-text-field label="Message" required> </v-text-field>
-          </v-card-text>
-          <v-card-actions>
-            
-            <v-row justify="center">
-            <v-col cols="12" lg="2">
-              <v-btn outlined class="pink white--text btn-style">Submit</v-btn>
-            </v-col></v-row>
-          </v-card-actions>
-        </v-card>
-      </v-row>
+        <v-row cols="12" justify="center">
+          <v-card width="500" height="500">
+            <v-card-title> Want to inspire young people? Drop us an email </v-card-title>
+            <v-card-text>
+              <v-text-field label="Name" required> </v-text-field>
+              <v-text-field label="Email" required> </v-text-field>
+              <v-text-field label="Message" required> </v-text-field>
+            </v-card-text>
+            <v-card-actions>
+              <v-row justify="center">
+                <v-col cols="12" lg="2">
+                  <v-btn outlined class="pink white--text btn-style">Submit</v-btn>
+                </v-col></v-row
+              >
+            </v-card-actions>
+          </v-card>
+        </v-row>
       </v-container>
       <!-- Message box End -->
       <v-main> </v-main>
@@ -172,10 +230,6 @@ export default {
     BaseLayout,
   },
 
-  data: () => ({ 
-    }),
-
-    
- 
+  data: () => ({}),
 };
 </script>
