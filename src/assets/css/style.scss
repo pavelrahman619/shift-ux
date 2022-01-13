@@ -7,19 +7,22 @@ $darkblue: #0B0B2B;
 }
 
 
-h1 {
-    margin-top: 20px;
-    margin-left: 50px;
-  }
-  .size {
-    height: 113px;
-  }
+// h1 {
+//     margin-top: 20px;
+//     margin-left: 50px;
+//   }
+//   .size {
+//     height: 113px;
+//   }
   
-  
+.height1 {
+  height: 100vh;
+}
   
   .round {
     margin: 20px;
-    // padding: 10px;
+    color:#0B0B2B;
+    
   }
   .v-application .pink {
       background-color: #ed388c !important;
@@ -29,7 +32,7 @@ h1 {
   
   p {
     margin-top: 30px;
-    margin-left: 40px;
+    // margin-left: 40px;
   } 
   
 
@@ -53,7 +56,6 @@ h1 {
 
 .box3{
   background-color: #FFD236 !important;
-  margin: 8px;
   border-width: 3px;
   border-style: solid;
   border-color: rgb(7, 7, 7) !important;
@@ -62,10 +64,8 @@ h1 {
 
 .box4{
    background-color: #FDFBEF !important;
-   height: 205px;
-   width: 200px;
-   margin-left: 30px;
-  
+   height: 250px;
+   width: 100%;
    border-width: 3px;
    border-style: solid;
    border-color: rgb(7, 7, 7) !important;
@@ -94,23 +94,56 @@ h1 {
 
 .box1 {
  
-  margin: 20px;
+ 
   padding: 10px;
   border-style: solid;
   border-width: 3px;
   border-color: rgb(7, 7, 7);
   
 }
-.box{
-  margin-left: 50px;
-  height: 460px;
-  width: 100%;
 
-  
+.v-slide-group__content {
+  .profile {
+    border: 3px solid black !important;
+    padding: 6px;
+  }
 }
 
 
 
+.v-sheet{
+  .v-application .elevation-8 {
+    box-shadow: none;
+  }
+}
+// .hidden-xs-only {
+//   border-radius: 8px !important;
+//   border-color: red !important;
+//   color: red  !important;
+//   background-color: red !important;
+//   text-decoration: none !important;
+//   max-width: auto;
+//   font-size-adjust: auto;
+//   margin: 1px;
+//   &:hover {
+//       background-color: blue !important;
+//       color: blue !important;
+//       text-decoration-color: blue !important;
+//       border-color: blue !important;
+//       margin: 1px;
+//       span {
+//           color: white !important;
+//       }
+//   }
+//   }
+
+//Child Btn
+
+.v-btn{
+  border-radius:28px!important;
+  margin: 2px;
+  
+} 
 // MEDIA QUERIES
 /* mobile */
 @media (max-width: 480px) {

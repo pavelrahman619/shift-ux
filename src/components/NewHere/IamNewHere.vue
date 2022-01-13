@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <div class="container">
-      <h1 class="pink--text font-weight-black text-sm-left">Hello! (Introduction)</h1>
+      <h1 class="pink--text font-weight-black text-sm-left" cols="12" md="4">Hello! (Introduction)</h1>
       <p class="text-start">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br/>
         Ullam laudantium laboriosam quis iusto assumenda<br/>
@@ -11,7 +11,7 @@
     </div>
 
     <div class="container">
-      <h1 class="pink--text font-weight-black text-sm-left">(The hook)</h1>
+      <h1 class="pink--text font-weight-black text-sm-left" cols="12" md="4">(The hook)</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br/>
         Ullam laudantium laboriosam quis iusto assumenda<br/>

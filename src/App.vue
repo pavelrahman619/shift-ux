@@ -1,8 +1,9 @@
 <template>
   <v-app>
     <Header />
-      <Changeworld />
-      <!-- <Howtohelp />  -->
+    <ShiftUniversity/>
+      <!-- <Changeworld /> -->
+      <Howtohelp /> 
     <v-main>
       
       <!-- <IamNewHere />  -->
@@ -27,8 +28,9 @@ import Header from "./components/Header.vue";
 import Footer from "./components/Footer";
 // import Menu from "./components/Menu";
 // import IamNewHere from "./components/NewHere/IamNewHere.vue";
-// import Howtohelp from "./components/HowToHelp/Howtohelp.vue";
-import Changeworld from "./components/ChangeTheWorld/Changeworld.vue";
+import Howtohelp from "./components/HowToHelp/Howtohelp.vue";
+// import Changeworld from "./components/ChangeTheWorld/Changeworld.vue";
+import ShiftUniversity from "./components/ShiftUniversity/ShiftUniversity.vue";
 
 export default {
   name: "App",
@@ -36,10 +38,11 @@ export default {
   components: {
     // Menu,
     Header,
-    Changeworld,
+    ShiftUniversity,
+    // Changeworld,
     Footer,
     // IamNewHere,
-    // Howtohelp,
+    Howtohelp,
     
   },
 
