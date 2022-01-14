@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+ <base-layout>
     <div class="container">
       <h1 class="pink--text font-weight-black text-sm-left" cols="12" md="4">Hello! (Introduction)</h1>
       <p class="text-start">
@@ -22,14 +22,16 @@
     <v-main>
       <ShiftProducts />
     </v-main>
-  </v-app>
+  </base-layout>
 </template>
 
 <script>
+import BaseLayout from "../../App.vue";
 import ShiftProducts from "./ShiftProducts.vue";
 export default {
   name: "IamNewHere",
   components: {
+    BaseLayout,
     ShiftProducts,
   },
   data: () => ({}),

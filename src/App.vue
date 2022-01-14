@@ -1,49 +1,39 @@
 <template>
   <v-app>
     <Header />
-    <ShiftUniversity/>
-      <!-- <Changeworld /> -->
-      <Howtohelp /> 
+    <ShiftUniversity />
+    <Changeworld />
+    <Howtohelp />
+    <IamNewHere />
+    <Menu />
     <v-main>
-      
-      <!-- <IamNewHere />  -->
-     
-      <!-- <Menu /> -->
-     
-
-       <slot/>
+      <slot />
     </v-main>
-     <Footer />
+    <Footer />
   </v-app>
-
 </template>
 
 <script>
-
-
-
-
-
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer";
-// import Menu from "./components/Menu";
-// import IamNewHere from "./components/NewHere/IamNewHere.vue";
+import Menu from "./components/Menu";
+import IamNewHere from "./components/NewHere/IamNewHere.vue";
 import Howtohelp from "./components/HowToHelp/Howtohelp.vue";
-// import Changeworld from "./components/ChangeTheWorld/Changeworld.vue";
+import Changeworld from "./components/ChangeTheWorld/Changeworld.vue";
 import ShiftUniversity from "./components/ShiftUniversity/ShiftUniversity.vue";
 
 export default {
   name: "App",
 
   components: {
-    // Menu,
+    Menu,
+
     Header,
     ShiftUniversity,
-    // Changeworld,
+    Changeworld,
     Footer,
-    // IamNewHere,
+    IamNewHere,
     Howtohelp,
-    
   },
 
   data: () => ({ drawer: false }),
