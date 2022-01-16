@@ -17,7 +17,8 @@
           <!-- <MakeAPlan2></MakeAPlan2> -->
           <!-- <MakeAPlan3></MakeAPlan3> -->
           <!-- <MakeAPlan31></MakeAPlan31> -->
-          <MakeAPlanHover></MakeAPlanHover>
+          <!-- <MakeAPlanHover></MakeAPlanHover> -->
+          <Campaigns></Campaigns>
           <!-- <Menu /> -->
         <!-- </v-container> -->
       </v-main>
@@ -34,7 +35,8 @@ import Header from "./components/Header";
 // import MakeAPlan2 from "./components/MakeAPlan2";
 // import MakeAPlan3 from "./components/MakeAPlan3";
 // import MakeAPlan31 from "./components/MakeAPlan31";
-import MakeAPlanHover from "./components/MakeAPlan/MakeAPlanHover";
+// import MakeAPlanHover from "./components/MakeAPlan/MakeAPlanHover";
+import Campaigns from "./components/Campaigns";
 import Footer from "./components/Footer";
 
 export default {
@@ -47,7 +49,8 @@ export default {
     // MakeAPlan2,
     // MakeAPlan3,
     // MakeAPlan31,
-    MakeAPlanHover,
+    // MakeAPlanHover,
+    Campaigns,
     Footer,
   },
 
