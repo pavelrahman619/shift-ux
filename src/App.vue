@@ -22,7 +22,7 @@
           <!-- <Menu /> -->
         <!-- </v-container> -->
       </v-main>
-          <Footer></Footer>
+          <!-- <Footer></Footer> -->
     </v-app>
   </div>
 </template>
@@ -37,7 +37,7 @@ import Header from "./components/Header";
 // import MakeAPlan31 from "./components/MakeAPlan31";
 // import MakeAPlanHover from "./components/MakeAPlan/MakeAPlanHover";
 import Campaigns from "./components/Campaigns";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 export default {
   name: "App",
@@ -51,7 +51,7 @@ export default {
     // MakeAPlan31,
     // MakeAPlanHover,
     Campaigns,
-    Footer,
+    // Footer,
   },
 
   data: () => ({}),
