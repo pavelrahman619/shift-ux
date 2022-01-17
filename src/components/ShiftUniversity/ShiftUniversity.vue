@@ -109,7 +109,8 @@
 
       <v-row cols="12" md="6" lg="6">
         <v-card>
-          <v-card-title class="font-weight-bold"> From our young creators </v-card-title>
+          <v-col cols="12" lg="6">
+          <v-card-title class="font-weight-bold"> From our young creators </v-card-title></v-col>
           <!-- From our young creators Menu -->
           <v-toolbar flat class="mainHeader">
             <v-toolbar-title>Sort by:</v-toolbar-title>

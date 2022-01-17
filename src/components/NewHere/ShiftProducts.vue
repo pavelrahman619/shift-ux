@@ -22,7 +22,7 @@
             </v-row>
           </v-col>
           <v-col cols="12" lg="6" class="mt-7">
-            <v-row no-gutters>
+            <v-row>
               <v-col cols="12" lg="12">
                 <v-row class="round" justify="space-around">
                   <v-avatar v-for="i in 5" :key="i" color="black">

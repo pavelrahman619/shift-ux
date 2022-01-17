@@ -1,11 +1,12 @@
 <template>
   <v-app>
     <Header />
-    <ShiftUniversity />
+    <!-- <ShiftUniversity />
     <Changeworld />
     <Howtohelp />
     <IamNewHere />
-    <Menu />
+    <Menu /> -->
+    <ShiftUniversityInsidePage />
     <v-main>
       <slot />
     </v-main>
@@ -16,24 +17,26 @@
 <script>
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer";
-import Menu from "./components/Menu";
-import IamNewHere from "./components/NewHere/IamNewHere.vue";
-import Howtohelp from "./components/HowToHelp/Howtohelp.vue";
-import Changeworld from "./components/ChangeTheWorld/Changeworld.vue";
-import ShiftUniversity from "./components/ShiftUniversity/ShiftUniversity.vue";
+// import Menu from "./components/Menu";
+// import IamNewHere from "./components/NewHere/IamNewHere.vue";
+// import Howtohelp from "./components/HowToHelp/Howtohelp.vue";
+// import Changeworld from "./components/ChangeTheWorld/Changeworld.vue";
+// import ShiftUniversity from "./components/ShiftUniversity/ShiftUniversity.vue";
+import ShiftUniversityInsidePage from "./components/ShiftUniversityInside/ShiftUniversityInsidePage.vue";
 
 export default {
   name: "App",
 
   components: {
-    Menu,
-
-    Header,
-    ShiftUniversity,
-    Changeworld,
     Footer,
-    IamNewHere,
-    Howtohelp,
+    Header,
+    // ShiftUniversity,
+    // Menu,
+    // Changeworld,
+
+    // IamNewHere,
+    // Howtohelp,
+    ShiftUniversityInsidePage,
   },
 
   data: () => ({ drawer: false }),

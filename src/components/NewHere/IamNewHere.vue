@@ -1,6 +1,6 @@
 <template>
  <base-layout>
-    <div class="container">
+    <div>
       <h1 class="pink--text font-weight-black text-sm-left" cols="12" md="4">Hello! (Introduction)</h1>
       <p class="text-start">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br/>

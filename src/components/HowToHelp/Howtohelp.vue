@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+<base-layout>
     <div>
       <v-card
         class="pa-md-4 mx-lg-auto"
@@ -172,23 +172,25 @@
         </v-card>
       </div>
     </div>
-  </v-app>
+  </base-layout>
 </template>
 
+
 <script>
+import BaseLayout from "../../App.vue";
 export default {
   name: "Howtohelp",
+  components: {
+    BaseLayout,
+  },
 
   data: () => ({}),
 };
 </script>
 
+
 <style scoped>
-p {
-  margin-top: 10px;
-  padding: 3px;
-  margin-left: 40px;
-}
+
 .box {
   margin-block-start: 50px;
   margin-block-end: 200px;

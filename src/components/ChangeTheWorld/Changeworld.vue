@@ -37,7 +37,7 @@
     <Child />
     <!-- Add video -->
 
-    <div>
+  
       <v-container fluid fill-height1>
         <v-row>
           <v-col cols="12" md="12" lg="8">
@@ -68,7 +68,7 @@
           </v-col>
         </v-row>
       </v-container>
-    </div>
+   
     <v-row justify="center" class="p1">
       <v-col cols="12" md="4">
         <p>
@@ -101,7 +101,7 @@
               width="100%"
               @click="toggle"
             >
-              <!-- <h2 class="white--text font-weight-black text-sm-left">Make A Plan</h2> -->
+            
               <a href="#">
                 <img
                   class="mr-3 image1"
