@@ -188,11 +188,3 @@ export default {
 };
 </script>
 
-
-<style scoped>
-
-.box {
-  margin-block-start: 50px;
-  margin-block-end: 200px;
-}
-</style>

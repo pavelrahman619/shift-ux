@@ -1,6 +1,6 @@
 <template>
   <base-layout>
-    <v-container class="spacing-playground pa-6" fluid>
+    <v-container fluid>
       <v-row>
         <v-card
           class="pa-md-4 mx-lg-auto"
@@ -125,8 +125,8 @@
         <v-row lg="12" cols="12" md="12">
           <v-col lg="2" cols="4">
             <v-row>
-              <v-row class="pa-2" lg="4" cols="6" justify="space-around">
-                <v-avatar v-for="i in 2" :key="i" color="#0B0B2B">
+              <v-row class="pa-2" lg="4" cols="6" justify="space-around" align="center">
+                <v-avatar v-for="i in 3" :key="i" color="#0B0B2B">
                   {{ i }}
                 </v-avatar>
               </v-row>
@@ -204,7 +204,7 @@
       <!-- Start Some fun stuff about me -->
       <v-container>
         <v-divider></v-divider>
-        <h1>Some fun stuff about me</h1>
+        <h1>Some fun stuff about me</h1><br>
 
         <v-row>
           <v-col cols="4" lg="4" md="2">
@@ -214,7 +214,8 @@
           </v-col>
           <v-col lg="2" cols="4">
             <v-row>
-              <v-row class="pa-2" lg="2" cols="6" justify="center">
+              
+              <v-row class="d-flex flex-column mb-6" lg="2" cols="6" align="center">
                 <v-avatar v-for="i in 5" :key="i" color="#FFD236">
                   {{ i }}
                 </v-avatar>
@@ -243,7 +244,7 @@
             </v-card>
           </v-col>
         </v-row>
-
+<v-row>
         <v-col lg="12">
           <v-card class="pa-2 aboutBox" height="250px" width="100%" style="top: -100px">
             <h1>
@@ -252,7 +253,7 @@
               >
             </h1>
           </v-card>
-        </v-col>
+        </v-col></v-row>
       </v-container>
       <!-- End Some fun stuff about me -->
 
@@ -279,7 +280,9 @@
 
       <!-- End Social media -->
 
-      <!-- Start Whats Next -->
+     
+    </v-container>
+     <!-- Start Whats Next -->
 
       <v-row lg="12" cols="6" md="8" class="pink white--text">
         <v-col lg="6" cols="6">
@@ -291,7 +294,6 @@
       </v-row>
 
       <!-- End Whats Next -->
-    </v-container>
   </base-layout>
 </template>
 

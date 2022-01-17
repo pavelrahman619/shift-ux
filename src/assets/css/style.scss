@@ -54,6 +54,10 @@ h1 {
   border-width: 3px;
   border-style: solid;
   border-color: rgb(7, 7, 7) !important;
+  .box {
+    margin-block-start: 50px;
+    margin-block-end: 200px;
+  }
 }
 .box3 {
   background-color: #ffd236 !important;

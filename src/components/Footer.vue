@@ -1,16 +1,19 @@
 <template>
-  <v-footer dark padless>
+  <v-footer padless>
     <v-card flat tile class="indigo darken-4 white--text text-center flex">
       <v-row class="text-center">
         <v-col lg="12">
-
           <v-container class="indigo darken-4">
             <v-row no-gutters>
               <v-col cols="12" sm="6" md="6">
                 <v-list-item>
                   <v-list-item-content>
                     <v-list-item-title class="pink--text font-weight-black"
-                      >I am new here<v-chip class="ma-2 font-weight-light" color="pink lighten-1" text-color="white">
+                      >I am new here<v-chip
+                        class="ma-2 font-weight-light"
+                        color="pink lighten-1"
+                        text-color="white"
+                      >
                         You are here
                       </v-chip></v-list-item-title
                     >
@@ -21,7 +24,6 @@
                     <v-list-item-title class="white--text font-weight-black"
                       >I want to change the world</v-list-item-title
                     >
-                    
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item>
@@ -64,9 +66,6 @@
               </v-icon>
             </v-btn>
           </v-card-text>
-
-
-        
         </v-col>
       </v-row>
     </v-card>
