@@ -87,7 +87,9 @@
       <!-- Start Topic-1 -->
 
       <v-container>
+         <h1>(topic-1)</h1>
         <v-row>
+         
           <v-col lg="8" cols="6" md="8">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis corrupti
@@ -103,7 +105,7 @@
 
         <v-row lg="12" cols="12" md="12">
           <v-col lg="8" cols="6">
-            <v-card class="aboutBox">
+            <v-card>
               <iframe
                 width="100%"
                 height="300px"
@@ -123,18 +125,31 @@
         <v-row lg="12" cols="12" md="12">
           <v-col lg="2" cols="4">
             <v-row>
-              <v-row class="pa-2" lg="2" cols="6" justify="space-around">
+              <v-row class="pa-2" lg="4" cols="6" justify="space-around">
                 <v-avatar v-for="i in 2" :key="i" color="#0B0B2B">
                   {{ i }}
                 </v-avatar>
               </v-row>
               <v-col lg="12" cols="12">
-                <v-card class="pa-2 box4"></v-card>
+                <v-card class="pa-2 aboutBox" height="280px"></v-card>
               </v-col>
             </v-row>
           </v-col>
-           <v-col lg="4" cols="6">
-            <v-card class="aboutBox" height="300px" width="100%"> </v-card>
+
+          <v-col lg="6" cols="4">
+            <v-row>
+              <v-row class="pa-2" lg="6" cols="6" justify="space-around">
+                <h1>Lorem ipsum exinventore iure, soluta eum reprehenderit?</h1>
+              </v-row>
+              <v-col lg="12" cols="12">
+                <v-card class="pa-2 aboutBox" height="200px"></v-card>
+              </v-col>
+            </v-row>
+          </v-col>
+          <v-col lg="4" cols="6">
+            <v-card >
+               <img src="@/assets/dog.png" height="320px" width="100%"/>
+               </v-card>
           </v-col>
         </v-row>
       </v-container>
